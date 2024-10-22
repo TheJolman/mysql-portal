@@ -1,0 +1,46 @@
+# Ignore sensitive environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore Composer's vendor directory
+/vendor/
+
+# Ignore system-generated files and caches
+*.log
+*.cache
+*.tmp
+*.lock
+*.sql
+*.sql.gz
+
+# Ignore compiled code
+*.compiled.php
+
+# Ignore specific IDE/editor directories and settings
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore npm and Node.js related files (if applicable)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore specific PHP settings or session files (depending on your setup)
+php_error.log
+php_debug.log
+session.save_path
+
+# Ignore user-uploaded content (if applicable, such as media or uploads folder)
+uploads/
+media/
+
+# Ignore deployment or build-specific files
+/build/
+dist/
