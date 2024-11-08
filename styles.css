@@ -1,0 +1,13 @@
+html {
+  font-family: "Roboto Slab", serif;
+}
+
+h1 {
+  padding: 2em;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
