@@ -11,8 +11,6 @@
 *.cache
 *.tmp
 *.lock
-*.sql
-*.sql.gz
 
 # Ignore compiled code
 *.compiled.php
