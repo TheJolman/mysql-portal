@@ -3,9 +3,10 @@
 
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="public/css/styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="/public/favicon.ico" >
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
   <title>DB Access Page</title>
 </head>
