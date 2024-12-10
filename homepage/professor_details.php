@@ -3,9 +3,11 @@
 <?php
 // username and password need to be replaced by your username and password
 // dbname is the same as your username
-$username='cs332f26';
-$password='YLtQPG10';
-$dbname='cs332f26';
+$env = parse_ini_file('../.env');
+$username = $env["USERNAME"];
+$password = $env["PASSWORD"];
+$dbname = $env["DBNAME"];
+
 $link = mysqli_connect('mariadb', $username, $password, $dbname);
 if (!$link) {
 	die('Could not connect: ' . mysql_error());
