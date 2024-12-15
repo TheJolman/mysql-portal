@@ -12,6 +12,7 @@ This project is a "portal" page that allows students and professors to recieve i
 relevent to them from a database by submitting their student id no. or ssn, respectively.  
   
 To run locally:  
-- install `mysql` or `mariahdb` and make sure it's running
-- use `php -S localhost:8000 -t homepage` (use whichever port you like)
+- install `mariadb` and make sure it's running
+- create a db and source `database.sql` and `data.sql` (in that order)
+- use `php -S localhost:8000` at the project root (use whichever port you like)
 
