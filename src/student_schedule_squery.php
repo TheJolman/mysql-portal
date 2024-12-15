@@ -23,13 +23,8 @@ include '../include/header.php';
     if (!$link) {
       die('Could not connect: ' . mysqli_connect_error());
     }
-    // echo 'Connected successfully';
 
-    // First query to fetch student details
-
-    // First query to fetch student details
     $cwid = $_POST["cwid"]; // Retrieve CWID from POST request
-
     $query = "SELECT * FROM Student WHERE cwid = ?";
     $stmt = $link->prepare($query);
     $stmt->bind_param("i", $cwid); // Bind $cwid as an integer parameter
@@ -38,6 +33,7 @@ include '../include/header.php';
     $row = $result->fetch_assoc();
 
     echo "<div class='results'>"; // unused but can be used to style
+    echo "<h3>Results: </h3>";
     if ($row) {
       printf("CWID: %s<br>\n", $row["cwid"]);
       printf("First NAME: %s<br>\n", $row["first_name"]);
