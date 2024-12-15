@@ -12,6 +12,7 @@ h1 {
   text-align: center;
   margin-bottom: 40px;
 }
+
 h2 {
   text-align: center;
 }
@@ -22,6 +23,7 @@ h2 {
   width: 100%;
   max-width: 500px;
   margin: 0 auto;
+  position: relative;
 }
 
 .button {
@@ -100,4 +102,33 @@ input[type="submit"]:hover {
 
 .results {
   margin-top: 40px;
+}
+
+.banner {
+  background-color: #333;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.banner-content {
+  padding: 10px;
+}
+
+.page-content {
+  margin-top: 20px;
+}
+
+.home-button {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 4px;
+  background-color: #555;
+}
+
+.home-button:hover {
+  background-color: #666;
 }

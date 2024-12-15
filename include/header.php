@@ -10,6 +10,10 @@
 </head>
 
 <body>
-    <nav class="banner">
-      <a href="/index.php" class="home-button">Home</a>
-    </nav>
+  <nav class="banner">
+    <div class="banner-content">
+      <a href="<?php echo rtrim(dirname($_SERVER['PHP_SELF']), '/src'); ?>/index.php" class="home-button">Home</a>
+    </div>
+  </nav>
+
+  <div class="page-content">
