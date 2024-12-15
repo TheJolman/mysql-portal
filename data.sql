@@ -31,7 +31,7 @@ VALUES
 ('Calculus I', 'Math Book 101', 3, 2),
 ('Linear Algebra', 'Math Book 102', 3, 2);
 
-Insert data into CourseSection table (must be done before Enrollment)
+-- Insert data into CourseSection table (must be done before Enrollment)
 INSERT INTO CourseSection (section_number, course_number, begin_time, end_time, number_of_seats, classroom, pssn)
 VALUES
 (1, 1, '09:00:00', '10:30:00', 30, 'Room 101', 1),
@@ -41,7 +41,7 @@ VALUES
 (1, 3, '09:00:00', '10:30:00', 35, 'Room 201', 3),
 (2, 3, '11:00:00', '12:30:00', 35, 'Room 201', 3);
 
-Now, ensure Enrollment references only valid CourseSection pairs
+-- Now, ensure Enrollment references only valid CourseSection pairs
 INSERT INTO Enrollment (cwid, section_number, course_number, grade)
 VALUES
 (1008, 1, 1, 'A'),
