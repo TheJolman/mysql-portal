@@ -32,7 +32,7 @@ include '../include/header.php';
     $result = $stmt->get_result();
     $row = $result->fetch_assoc();
 
-    echo "<div class='results'>"; // unused but can be used to style
+    echo "<div class='results'>";
     echo "<h3>Results: </h3>";
     if ($row) {
       printf("CWID: %s<br>\n", $row["cwid"]);

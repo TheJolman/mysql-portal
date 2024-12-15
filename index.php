@@ -16,8 +16,8 @@ include 'include/header.php';
     <div class="button-group">
       <h2>For the Students</h2>
       <br>
-      <a href="src/section_listings_squery.php" class="button student">Section Listings</a>
-      <a href="src/student_schedule_squery.php" class="button student">Student Schedule</a>
+      <a href="src/section_listings.php" class="button student">Section Listings</a>
+      <a href="src/student_schedule.php" class="button student">Student Schedule</a>
     </div>
   </div>
 </div>
