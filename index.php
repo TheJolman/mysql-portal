@@ -9,7 +9,7 @@ include 'include/header.php';
     <div class="button-group">
       <h2>For the Professors</h2>
       <br>
-      <a href="src/professor_details_pquery.php" class="button">Professor Details</a>
+      <a href="src/professor_details.php" class="button">Professor Details</a>
       <a href="src/grade_counts_pquery.php" class="button">Grade Counts</a>
     </div>
 
