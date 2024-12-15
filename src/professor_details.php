@@ -86,7 +86,7 @@ include '../include/header.php';
       $result->free();
       $result2->free();
     } else {
-      echo "No results found for the specified course number.";
+      echo "No results found for the specified SSN.";
     }
     echo "</div>";
 
