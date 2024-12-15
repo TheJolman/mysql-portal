@@ -1,5 +1,3 @@
-<html>
-<body>
 <?php
 // username and password need to be replaced by your username and password
 // dbname is the same as your username
@@ -50,5 +48,3 @@ while ($row = $result->fetch_assoc()) {
 $stmt->close();
 $link->close();
 ?>
-</body>
-</html>

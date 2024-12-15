@@ -1,5 +1,3 @@
-<html>
-<body>
 <?php
 // username and password need to be replaced by your username and password
 // dbname is the same as your username
@@ -58,5 +56,3 @@ $stmt2->close();
 $link->close();
 
 ?>
-</body>
-</html>
