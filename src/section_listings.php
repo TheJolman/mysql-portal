@@ -10,7 +10,7 @@ include '../include/header.php';
     <input type="submit" />
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["cwid"])) {
+    if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["coursenum"])) {
       // username and password need to be replaced by your username and password
       // dbname is the same as your username
       $env = parse_ini_file('../.env');
