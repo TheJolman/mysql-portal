@@ -1,4 +1,4 @@
-# Databases-Project
+# Databases Term Project
 
 CPSC 332 File Structures and Database Systems  
 Fall 2024 Term Project  
