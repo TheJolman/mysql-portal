@@ -8,7 +8,7 @@ $dbname = $env["DBNAME"];
 
 $link = mysqli_connect('mariadb', $username, $password, $dbname);
 if (!$link) {
-	die('Could not connect: ' . mysqli_connect_error());
+  die('Could not connect: ' . mysqli_connect_error());
 }
 // echo 'Connected successfully';
 
@@ -23,12 +23,12 @@ $row = $result->fetch_assoc();
 
 if ($row) {
 
-    echo "<br>Professor Details:<br>";
+  echo "<br>Professor Details:<br>";
 
-	printf("Professor SSN: %s<br>", $row["ssn"]);
+  printf("Professor SSN: %s<br>", $row["ssn"]);
 
-    // Subquery setup for Enrollment and MeetingDays
-    $query2 = "
+  // Subquery setup for Enrollment and MeetingDays
+  $query2 = "
         SELECT 
             c.title,
             cs.course_number,
@@ -51,31 +51,30 @@ if ($row) {
             c.title, cs.course_number, cs.section_number, cs.classroom, cs.begin_time, cs.end_time
     ";
 
-    $stmt2 = $link->prepare($query2);
-    $stmt2->bind_param("i", $profssn);
-    $stmt2->execute();
-    $result2 = $stmt2->get_result();
+  $stmt2 = $link->prepare($query2);
+  $stmt2->bind_param("i", $profssn);
+  $stmt2->execute();
+  $result2 = $stmt2->get_result();
 
-    // Loop through the results and print each course number and grade
-    while ($enrollment_row = $result2->fetch_assoc()) {
-        printf(
-            "Title: %s, Classroom: %s, Meeting Days: %s, Start time: %s, End time: %s<br>\n",
-			$enrollment_row["title"],
-            $enrollment_row["classroom"],
-            $enrollment_row["meeting_days"],
-            $enrollment_row["begin_time"],
-            $enrollment_row["end_time"],
-        );
-    }
+  // Loop through the results and print each course number and grade
+  while ($enrollment_row = $result2->fetch_assoc()) {
+    printf(
+      "Title: %s, Classroom: %s, Meeting Days: %s, Start time: %s, End time: %s<br>\n",
+      $enrollment_row["title"],
+      $enrollment_row["classroom"],
+      $enrollment_row["meeting_days"],
+      $enrollment_row["begin_time"],
+      $enrollment_row["end_time"],
+    );
+  }
 
-    // Free result sets
-    $result->free();
-    $result2->free();
+  // Free result sets
+  $result->free();
+  $result2->free();
 } else {
-    echo "No results found for the specified course number.";
+  echo "No results found for the specified course number.";
 }
 
 $stmt->close();
 $stmt2->close();
 $link->close();
-?>

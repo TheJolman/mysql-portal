@@ -8,7 +8,7 @@ $dbname = $env["DBNAME"];
 
 $link = mysqli_connect('mariadb', $username, $password, $dbname);
 if (!$link) {
-	die('Could not connect: ' . mysqli_connect_error());
+  die('Could not connect: ' . mysqli_connect_error());
 }
 // echo 'Connected successfully';
 
@@ -38,13 +38,12 @@ $result = $stmt->get_result();
 printf("Course Number: %d, Section Number: %d<br>", $course, $section);
 
 while ($row = $result->fetch_assoc()) {
-    printf(
-        "Grade: %s, Number of Students: %d<br>\n",
-        $row["grade"],
-        $row["student_count"]
-    );
+  printf(
+    "Grade: %s, Number of Students: %d<br>\n",
+    $row["grade"],
+    $row["student_count"]
+  );
 }
 
 $stmt->close();
 $link->close();
-?>
