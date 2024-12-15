@@ -10,7 +10,7 @@ $dbname = $env["DBNAME"];
 
 $link = mysqli_connect('mariadb', $username, $password,$dbname);
 if (!$link) {
-	die('Could not connect: ' . mysql_error());
+	die('Could not connect: ' . mysqli_connect_error());
 }
 // echo 'Connected successfully';
 
