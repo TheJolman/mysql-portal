@@ -10,7 +10,7 @@ include 'include/header.php';
       <h2>For the Professors</h2>
       <br>
       <a href="src/professor_details.php" class="button">Professor Details</a>
-      <a href="src/grade_counts_pquery.php" class="button">Grade Counts</a>
+      <a href="src/grade_counts.php" class="button">Grade Counts</a>
     </div>
 
     <div class="button-group">
