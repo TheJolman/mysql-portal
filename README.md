@@ -1,5 +1,9 @@
 # Databases Term Project
 
+![Image](https://github.com/user-attachments/assets/ce5ef200-8f84-4d30-bc1e-40140d5d0e06)
+
+![Image](https://github.com/user-attachments/assets/8447d837-f610-4706-9bf0-d67b7141b5ed)
+
 CPSC 332 File Structures and Database Systems  
 Fall 2024 Term Project  
   
